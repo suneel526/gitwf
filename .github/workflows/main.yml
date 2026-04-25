@@ -1,28 +1,27 @@
 name: File operations
 
 on: push
-
-jobs: 
+jobs:
   build:
-  runs-on: ubuntu-latest
-  steps:
-    - name: create file1
-      run: touch file1.txt
-    - name: enter data on to the file
-      run: echo "Hi this is my first Actions file" > file1.txt
-    - name: cat the file
-      run: cat file1.txt
-    - name: display time 
-      run: date
-    - name: display calendar
-      run: cal
-    - name: display os model
-      run: cat /etc/os-release
-    - name: display os model
-      run: cat /proc/cpuinfo
-    - name: display os model
-      run: uname -a
-    - name: display all the files in the current directory
-      run: ls -la
-    - name: display the current directory
-      run: pwd
+    runs-on: ubuntu-latest
+    steps:
+      - name: create file1
+        run: touch file1.txt
+      - name: enter data on to the file
+        run: echo "Hi this is my first Actions file" > file1.txt
+      - name: cat the file
+        run: cat file1.txt
+      - name: display time 
+        run: date
+      - name: display calendar
+        run: cal
+      - name: display os model
+        run: cat /etc/os-release
+      - name: display os model
+        run: cat /proc/cpuinfo
+      - name: display os model
+        run: uname -a
+      - name: display all the files in the current directory
+        run: ls -la
+      - name: display the current directory
+        run: pwd
