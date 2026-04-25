@@ -10,9 +10,11 @@ jobs:
       - name: enter data on to the file
         run: echo "Hi this is my first Actions file" > file1.txt
       - name: cat the file
-        run: cat file1.txt
+        run: cat file1.txt 
       - name: display time 
         run: date
+      - name: install calendar command
+        run: sudo apt-get update && sudo apt-get install -y ncal
       - name: display calendar
         run: cal
       - name: display os model
