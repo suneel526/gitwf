@@ -3,6 +3,7 @@ name: File operations
 on: push
 
 jobs: 
+  build:
   runs-on: ubuntu-latest
   steps:
     - name: create file1
