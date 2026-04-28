@@ -1,0 +1,12 @@
+name: manual workflows
+
+on: workflow_dispatch
+jobs:
+     manual:
+            runs-on: ubuntu-24.04
+            steps:
+                 - name: install nginx
+                   run: sudo apt install nginx | nginx --version
+                 - name: printing message  
+                   run: nginx installed sucessfully 
+                   
