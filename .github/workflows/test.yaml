@@ -6,7 +6,9 @@ jobs:
             runs-on: ubuntu-24.04
             steps:
                  - name: install nginx
-                   run: sudo apt install nginx | nginx --version
+                   run: sudo apt install nginx 
+                 - name: checking the version
+                   run: nginx --versopm
                  - name: printing message  
                    run: nginx installed sucessfully 
                    
